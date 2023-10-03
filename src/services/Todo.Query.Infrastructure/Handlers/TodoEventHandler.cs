@@ -1,13 +1,9 @@
-﻿
-
-using System.Text;
+﻿using System.Text;
 using System.Text.Json;
 using EventStore.Client;
 using Todo.BuildingBlocks.Converters;
 using Todo.BuildingBlocks.Events;
-using Todo.Query.Domain.Entities;
 using Todo.Query.Domain.Repositories;
-using Todo.Query.Infrastructure.Converters;
 
 namespace Todo.Query.Infrastructure.Handlers;
 
@@ -33,8 +29,11 @@ public class TodoEventHandler : ITodoEventHandler
                 "read-api",
                 filter,
                 settings);
-        } catch {}
-
+        }
+        catch
+        {
+            // ignored
+        }
     }
 
     public async Task Subscribe()
@@ -44,11 +43,11 @@ public class TodoEventHandler : ITodoEventHandler
             "read-api",
             async (subscription, evnt, retryCount, cancellationToken) =>
             {
-                var options = new JsonSerializerOptions { Converters = { new EventSubscriptionJsonConverter(evnt.Event.EventType) } };
+                var options = new JsonSerializerOptions { Converters = { new EventJsonConverter(evnt.Event.EventType) } };
 
                 var json = Encoding.UTF8.GetString(evnt.Event.Data.ToArray());
                 
-                    var @event = JsonSerializer.Deserialize<BaseEvent>(json, options);
+                var @event = JsonSerializer.Deserialize<BaseEvent>(json, options);
 
                 var handler = GetType().GetMethod("Handle", new Type[] { @event.GetType() });
 
