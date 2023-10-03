@@ -7,6 +7,7 @@ using Todo.BuildingBlocks.Converters;
 using Todo.BuildingBlocks.Events;
 using Todo.Query.Domain.Entities;
 using Todo.Query.Domain.Repositories;
+using Todo.Query.Infrastructure.Converters;
 
 namespace Todo.Query.Infrastructure.Handlers;
 
@@ -21,30 +22,48 @@ public class TodoEventHandler : ITodoEventHandler
         _todoRepository = todoRepository;
     }
 
+    private async Task CreateSubscription()
+    {
+        try
+        {
+            var filter = StreamFilter.Prefix("todo-events-");
+
+            var settings = new PersistentSubscriptionSettings();
+            await _eventStoreClient.CreateToAllAsync(
+                "read-api",
+                filter,
+                settings);
+        } catch {}
+
+    }
+
     public async Task Subscribe()
     {
-        
-        var subscription = await _eventStoreClient.SubscribeToStreamAsync(
-            "$ce-todo",
+        await CreateSubscription();
+        var subscription = await _eventStoreClient.SubscribeToAllAsync(
             "read-api",
-            async (subscription, evnt, retryCount, cancellationToken) => {
-                                
-                
-                var options = new JsonSerializerOptions { Converters = { new EventJsonConverter() } };
+            async (subscription, evnt, retryCount, cancellationToken) =>
+            {
+                var options = new JsonSerializerOptions { Converters = { new EventSubscriptionJsonConverter(evnt.Event.EventType) } };
 
-                var json = Encoding.UTF8.GetString(evnt.Event.Metadata.ToArray());
-                var @event = JsonSerializer.Deserialize<BaseEvent>(json, options);
+                var json = Encoding.UTF8.GetString(evnt.Event.Data.ToArray());
                 
+                    var @event = JsonSerializer.Deserialize<BaseEvent>(json, options);
+
                 var handler = GetType().GetMethod("Handle", new Type[] { @event.GetType() });
-                
+
                 if (handler == null)
                 {
                     throw new ArgumentNullException(nameof(handler), $"Could not find event handler method!");
                 }
-                
+
                 await ((Task)handler.Invoke(this, new object[] { @event }))!;
-                
+
                 await subscription.Ack(evnt);
+            },
+            (subscription, reason, ex) =>
+            {
+                Console.WriteLine($"Subscription dropped due to {reason}");
             });
 
     }

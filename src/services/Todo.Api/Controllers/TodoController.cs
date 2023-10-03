@@ -31,6 +31,22 @@ public class TodoController : ControllerBase
         return Ok();
     }
     
+    [HttpPatch("{id}/done")]
+    public async Task<IActionResult> MarkAsDoneAsync(Guid id)
+    {
+        var command = new MarkTodoAsDoneCommand { Id = id };
+        await _mediator.Send(command);
+        return Ok();
+    }
+    
+    [HttpPatch("{id}/undone")]
+    public async Task<IActionResult> MarkAsUndoneAsync(Guid id)
+    {
+        var command = new MarkTodoAsUndoneCommand { Id = id };
+        await _mediator.Send(command);
+        return Ok();
+    }
+    
     [HttpGet("")]
     public async Task<IActionResult> GetAllAsync()
     {

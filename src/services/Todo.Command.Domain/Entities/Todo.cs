@@ -86,5 +86,11 @@ public class Todo : Entity
             Id = Id, Name = name
         });
     }
+    
+    public void Apply(TodoNameUpdatedEvent @event)
+    {
+        Name = @event.Name;
+        _validate();
+    }
 
 }

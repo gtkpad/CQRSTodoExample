@@ -26,7 +26,7 @@ public class TodoEventStoreRepository : IEventStoreRepository
 
     public async Task AppendAsync(BaseEvent @event)
     {            
-        var options = new JsonSerializerOptions { Converters = { new EventJsonConverter() } };
+        var options = new JsonSerializerOptions { Converters = { new EventJsonConverter(nameof(@event)) } };
 
         var data = JsonSerializer.Serialize(@event, options);
         
@@ -37,6 +37,7 @@ public class TodoEventStoreRepository : IEventStoreRepository
             );
         
         
+        
         await _eventStoreClient.AppendToStreamAsync(getStreamName(@event.Id), StreamState.Any, new List<EventData> { eventData });
     }
 
@@ -45,9 +46,8 @@ public class TodoEventStoreRepository : IEventStoreRepository
         try
         {
             var esEvents =  _eventStoreClient.ReadStreamAsync(Direction.Forwards, getStreamName(aggregateId), StreamPosition.Start);
-            var options = new JsonSerializerOptions { Converters = { new EventJsonConverter() } };
 
-            return (await esEvents.Select(@event => JsonSerializer.Deserialize<BaseEvent>(@event.Event.Data.ToString(), options)).ToListAsync())!;
+            return await (from @event in esEvents let options = new JsonSerializerOptions { Converters = { new EventJsonConverter(@event.Event.EventType) } } let json = Encoding.UTF8.GetString(@event.Event.Data.ToArray()) select JsonSerializer.Deserialize<BaseEvent>(json, options)!).ToListAsync();
         }
         catch
         {

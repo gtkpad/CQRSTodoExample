@@ -2,18 +2,13 @@
 using System.Text.Json.Serialization;
 using Todo.BuildingBlocks.Events;
 
-namespace Todo.BuildingBlocks.Converters;
+namespace Todo.Query.Infrastructure.Converters;
 
-public class EventJsonConverter : JsonConverter<BaseEvent>
+public class EventSubscriptionJsonConverter : JsonConverter<BaseEvent>
 {
     private readonly string _eventType;
     
-    public override bool CanConvert(Type typeToConvert)
-    {
-        return typeToConvert.IsAssignableFrom(typeof(BaseEvent));
-    }
-
-    public EventJsonConverter(string eventType)
+    public EventSubscriptionJsonConverter(string eventType)
     {
         _eventType = eventType;
     }
@@ -39,17 +34,6 @@ public class EventJsonConverter : JsonConverter<BaseEvent>
 
     public override void Write(Utf8JsonWriter writer, BaseEvent value, JsonSerializerOptions options)
     {
-        switch (value.GetType().Name) 
-        {
-            case nameof(TodoCreatedEvent):
-                JsonSerializer.Serialize<TodoCreatedEvent>(writer, (TodoCreatedEvent)value, options); break;
-            case nameof(TodoMarkedAsDone):
-                JsonSerializer.Serialize<TodoMarkedAsDone>(writer, (TodoMarkedAsDone)value, options); break;
-            case nameof(TodoMarkedAsUndoneEvent):
-                JsonSerializer.Serialize<TodoMarkedAsUndoneEvent>(writer, (TodoMarkedAsUndoneEvent)value, options); break;
-            case nameof(TodoNameUpdatedEvent):
-                JsonSerializer.Serialize<TodoNameUpdatedEvent>(writer, (TodoNameUpdatedEvent)value, options); break;
-            default: throw new JsonException($"{value.GetType().Name} is not supported yet!");break;
-        };
+        throw new NotImplementedException();
     }
 }
