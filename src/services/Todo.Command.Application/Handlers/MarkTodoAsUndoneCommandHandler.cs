@@ -1,4 +1,5 @@
 ﻿using Todo.BuildingBlocks.Commands;
+using Todo.BuildingBlocks.Errors;
 using Todo.BuildingBlocks.Handlers;
 using Todo.Command.Domain.Commands;
 
@@ -18,6 +19,13 @@ public class MarkTodoAsUndoneCommandHandler : ICommandHandler<MarkTodoAsUndoneCo
     {
         var todo = await _eventSourcingHandler.GetByIdAsync(command.Id);
         todo.MarkAsUndone();
+        
+        if (!todo.IsValid)
+        {
+            var errors = todo.Notifications.Select(e => new EntityFieldError(e.Key, e.Message)).ToList();
+            throw new EntityValidationError("Error on Mark Todo as Undone", errors);
+        }
+
         await _eventSourcingHandler.SaveAsync(todo);
 
         return true;

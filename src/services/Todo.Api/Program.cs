@@ -1,8 +1,10 @@
 using System.Reflection;
 using EventStore.Client;
 using MediatR;
+using Microsoft.AspNetCore.Diagnostics;
 using Todo.Api.Extensions;
 using Todo.BuildingBlocks.Commands;
+using Todo.BuildingBlocks.Errors;
 using Todo.BuildingBlocks.Handlers;
 using Todo.BuildingBlocks.Repository;
 using Todo.BuildingBlocks.Stores;
@@ -54,6 +56,34 @@ builder.Services.InjectQueryHandlers();
 builder.Services.AddHostedService<TodoEventHandlerHostedService>();
 
 var app = builder.Build();
+
+app.UseExceptionHandler(exceptionHandler =>
+{
+    exceptionHandler.Run(async context => {
+        var exception = context.Features.Get<IExceptionHandlerPathFeature>().Error;
+       
+        if (exception is EntityValidationError error)
+        {
+            context.Response.StatusCode = 400;
+            await context.Response.WriteAsJsonAsync(new
+            {
+                Message = error.Message,
+                Errors = error.Errors
+            });
+            return;
+        }
+        else
+        {
+            context.Response.StatusCode = 500;
+            await context.Response.WriteAsJsonAsync(new
+            {
+                Message = "An error occurred",
+                Errors = new List<EntityFieldError>()
+            });
+            return;
+        }
+    });
+});
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

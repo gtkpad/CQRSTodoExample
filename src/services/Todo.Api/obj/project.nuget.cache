@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "USepDGYykrSvAM4lJDrRxpj8n0Ts5WQd5cNZxM7F6KjQE5U4KW8QlzO1xG56w1AhQpOFgbE5MHkK5gASRE0ZfQ==",
+  "dgSpecHash": "18vnZXTvcii1NrEHMFC+Rl0vYdULtnmSHqhlAagLgOlY6MYTNa6F/XFjQUTGHGZv1991btNP5/y8PIrWaxqesg==",
   "success": true,
   "projectFilePath": "C:\\Users\\gabri\\RiderProjects\\Todo\\src\\services\\Todo.Api\\Todo.Api.csproj",
   "expectedPackageFiles": [
@@ -119,7 +119,19 @@
     "C:\\Users\\gabri\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\system.web.http.common\\4.0.20126.16343\\system.web.http.common.4.0.20126.16343.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\zstdsharp.port\\0.6.2\\zstdsharp.port.0.6.2.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Web.Http.Common 4.0.20126.16343' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "System.Web.Http.Common",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }

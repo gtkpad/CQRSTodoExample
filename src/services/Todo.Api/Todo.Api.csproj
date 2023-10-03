@@ -12,6 +12,7 @@
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.11"/>
         <PackageReference Include="Microsoft.Extensions.Options" Version="7.0.1" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0"/>
+        <PackageReference Include="System.Web.Http.Common" Version="4.0.20126.16343" />
     </ItemGroup>
 
     <ItemGroup>
@@ -23,6 +24,7 @@
       <ProjectReference Include="..\Todo.Query.Domain\Todo.Query.Domain.csproj" />
       <ProjectReference Include="..\Todo.Query.Infrastructure\Todo.Query.Infrastructure.csproj" />
     </ItemGroup>
+
 
 
 </Project>

@@ -77,3 +77,4 @@ C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Api\bin\Debug\net7.0\protobu
 C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Api\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Binder.dll
 C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Api\bin\Debug\net7.0\Microsoft.Extensions.Hosting.dll
 C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Api\bin\Debug\net7.0\EventStore.Client.PersistentSubscriptions.dll
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Api\bin\Debug\net7.0\System.Web.Http.Common.dll
