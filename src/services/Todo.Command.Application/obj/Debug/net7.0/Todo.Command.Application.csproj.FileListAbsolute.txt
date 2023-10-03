@@ -1,0 +1,17 @@
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Application\bin\Debug\net7.0\Todo.Command.Application.deps.json
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Application\bin\Debug\net7.0\Todo.Command.Application.dll
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Application\bin\Debug\net7.0\Todo.Command.Application.pdb
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Application\bin\Debug\net7.0\Todo.BuildingBlocks.dll
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Application\bin\Debug\net7.0\Todo.Command.Domain.dll
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Application\bin\Debug\net7.0\Todo.Command.Domain.pdb
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Application\bin\Debug\net7.0\Todo.BuildingBlocks.pdb
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Application\obj\Debug\net7.0\Todo.Command.Application.csproj.AssemblyReference.cache
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Application\obj\Debug\net7.0\Todo.Command.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Application\obj\Debug\net7.0\Todo.Command.Application.AssemblyInfoInputs.cache
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Application\obj\Debug\net7.0\Todo.Command.Application.AssemblyInfo.cs
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Application\obj\Debug\net7.0\Todo.Command.Application.csproj.CoreCompileInputs.cache
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Application\obj\Debug\net7.0\Todo.Command.Application.csproj.CopyComplete
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Application\obj\Debug\net7.0\Todo.Command.Application.dll
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Application\obj\Debug\net7.0\refint\Todo.Command.Application.dll
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Application\obj\Debug\net7.0\Todo.Command.Application.pdb
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Application\obj\Debug\net7.0\ref\Todo.Command.Application.dll

@@ -1,0 +1,17 @@
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Infrastructure\bin\Debug\net7.0\Todo.Query.Infrastructure.deps.json
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Infrastructure\bin\Debug\net7.0\Todo.Query.Infrastructure.dll
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Infrastructure\bin\Debug\net7.0\Todo.Query.Infrastructure.pdb
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Infrastructure\bin\Debug\net7.0\Todo.BuildingBlocks.dll
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Infrastructure\bin\Debug\net7.0\Todo.Query.Domain.dll
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Infrastructure\bin\Debug\net7.0\Todo.Query.Domain.pdb
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Infrastructure\bin\Debug\net7.0\Todo.BuildingBlocks.pdb
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Infrastructure\obj\Debug\net7.0\Todo.Query.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Infrastructure\obj\Debug\net7.0\Todo.Query.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Infrastructure\obj\Debug\net7.0\Todo.Query.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Infrastructure\obj\Debug\net7.0\Todo.Query.Infrastructure.AssemblyInfo.cs
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Infrastructure\obj\Debug\net7.0\Todo.Query.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Infrastructure\obj\Debug\net7.0\Todo.Query.Infrastructure.csproj.CopyComplete
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Infrastructure\obj\Debug\net7.0\Todo.Query.Infrastructure.dll
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Infrastructure\obj\Debug\net7.0\refint\Todo.Query.Infrastructure.dll
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Infrastructure\obj\Debug\net7.0\Todo.Query.Infrastructure.pdb
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Infrastructure\obj\Debug\net7.0\ref\Todo.Query.Infrastructure.dll

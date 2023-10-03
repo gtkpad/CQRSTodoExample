@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "AXvzH7FKYhjR2A9xyOcuE1xOpUIVDHrgl/y5QDHkwyZtxSqmvc2ilCqD/RkbtnVK1feEzCuH1g+4K4XO4s8iGA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gabri\\RiderProjects\\Todo\\src\\services\\Todo.BuildingBlocks\\Todo.BuildingBlocks.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gabri\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

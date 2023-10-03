@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+
+    <ItemGroup>
+      <ProjectReference Include="..\Todo.BuildingBlocks\Todo.BuildingBlocks.csproj" />
+      <ProjectReference Include="..\Todo.Query.Domain\Todo.Query.Domain.csproj" />
+    </ItemGroup>
+
+</Project>

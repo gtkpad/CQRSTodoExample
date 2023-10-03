@@ -1,0 +1,15 @@
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Domain\bin\Debug\net7.0\Todo.Command.Domain.deps.json
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Domain\bin\Debug\net7.0\Todo.Command.Domain.dll
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Domain\bin\Debug\net7.0\Todo.Command.Domain.pdb
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Domain\bin\Debug\net7.0\Todo.BuildingBlocks.dll
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Domain\bin\Debug\net7.0\Todo.BuildingBlocks.pdb
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Domain\obj\Debug\net7.0\Todo.Command.Domain.csproj.AssemblyReference.cache
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Domain\obj\Debug\net7.0\Todo.Command.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Domain\obj\Debug\net7.0\Todo.Command.Domain.AssemblyInfoInputs.cache
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Domain\obj\Debug\net7.0\Todo.Command.Domain.AssemblyInfo.cs
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Domain\obj\Debug\net7.0\Todo.Command.Domain.csproj.CoreCompileInputs.cache
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Domain\obj\Debug\net7.0\Todo.Command.Domain.csproj.CopyComplete
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Domain\obj\Debug\net7.0\Todo.Command.Domain.dll
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Domain\obj\Debug\net7.0\refint\Todo.Command.Domain.dll
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Domain\obj\Debug\net7.0\Todo.Command.Domain.pdb
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Command.Domain\obj\Debug\net7.0\ref\Todo.Command.Domain.dll

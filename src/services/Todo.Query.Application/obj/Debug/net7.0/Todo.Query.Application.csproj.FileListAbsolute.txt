@@ -1,0 +1,17 @@
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Application\bin\Debug\net7.0\Todo.Query.Application.deps.json
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Application\bin\Debug\net7.0\Todo.Query.Application.dll
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Application\bin\Debug\net7.0\Todo.Query.Application.pdb
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Application\bin\Debug\net7.0\Todo.BuildingBlocks.dll
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Application\bin\Debug\net7.0\Todo.Query.Domain.dll
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Application\bin\Debug\net7.0\Todo.BuildingBlocks.pdb
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Application\bin\Debug\net7.0\Todo.Query.Domain.pdb
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Application\obj\Debug\net7.0\Todo.Query.Application.csproj.AssemblyReference.cache
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Application\obj\Debug\net7.0\Todo.Query.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Application\obj\Debug\net7.0\Todo.Query.Application.AssemblyInfoInputs.cache
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Application\obj\Debug\net7.0\Todo.Query.Application.AssemblyInfo.cs
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Application\obj\Debug\net7.0\Todo.Query.Application.csproj.CoreCompileInputs.cache
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Application\obj\Debug\net7.0\Todo.Query.Application.csproj.CopyComplete
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Application\obj\Debug\net7.0\Todo.Query.Application.dll
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Application\obj\Debug\net7.0\refint\Todo.Query.Application.dll
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Application\obj\Debug\net7.0\Todo.Query.Application.pdb
+C:\Users\gabri\RiderProjects\Todo\src\services\Todo.Query.Application\obj\Debug\net7.0\ref\Todo.Query.Application.dll
